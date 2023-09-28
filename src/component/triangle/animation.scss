@@ -1,0 +1,65 @@
+$background-color_1: #ff5252;
+$background-color_2: #6587ff;
+$background-color_3: #8bff54;
+$background-color_4: #e9ff60;
+
+@keyframes rotateAndScale {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.5);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+}
+.rotate-sec {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotate {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  animation: rotateAndScale 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  justify-content: center;
+  margin: 0px auto;
+}
+.polygon1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: $background-color_1;
+  clip-path: polygon(50% 49%, 0% 100%, 100% 100%);
+}
+.polygon2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: $background-color_2;
+  clip-path: polygon(50% 49%, 0 0, 0 100%);
+}
+.polygon3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: $background-color_3;
+  clip-path: polygon(50% 49%, 100% 0, 0 0);
+}
+.polygon4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: $background-color_4;
+  clip-path: polygon(50% 49%, 100% 100%, 100% 0);
+}

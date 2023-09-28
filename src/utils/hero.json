@@ -2,21 +2,21 @@
   {
       "id": 1,
       "logo": "/assets/images/Union.png",
-      "herotitle": "hero-title 1",
+      "herotitle": "Lorem ipsum dolor sit amet",
       "heropara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "bgUrl": "../../../assets/images/laptop-1.png"
   },
   {
       "id": 2,
       "logo": "/assets/images/Union.png",
-      "herotitle": "hero-title 2",
+      "herotitle": "Lorem ipsum dolor sit amet",
       "heropara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "bgUrl": "../../../assets/images/laptop-2.png"
   },
   {
       "id": 3,
       "logo": "/assets/images/Union.png",
-      "herotitle": "hero-title 3",
+      "herotitle": "Lorem ipsum dolor sit amet",
       "heropara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "bgUrl": "../../../assets/images/laptop-3.png"
   }

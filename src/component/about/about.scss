@@ -1,0 +1,42 @@
+.bg-gray {
+  background: #dce1e6;
+  height: 100vh;
+  display: flex;
+
+  .about-container {
+    width: 200px;
+    height: 100vh;
+    background: #6a45ff;
+    padding-top: 96px;
+    .text-white {
+      color: #fff;
+    }
+  }
+
+  .about-desc {
+    width: 31%;
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .about-img-box {
+    z-index: 99;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    img {
+      width: 47%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-gray {
+    display: none;
+  }
+}
