@@ -1,6 +1,204 @@
-.Navbar {
-  .logo {
-    height: 44px;
-    width: 44px;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@300&family=Revalia&family=Rubik:wght@300;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: "hsl(210, 36%, 96%)";
+  color: hsl(205, 78%, 60%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+}
+h2 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+h3 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+nav {
+  background: #fff;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: hsl(205, 78%, 60%);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.menu-icon {
+  color: #6a45ff;
+}
+.logo {
+  height: 40px;
+}
+.links {
+  li {
+    margin-right: 30px;
+  }
+  a {
+    color: hsl(209, 34%, 30%);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    &:hover {
+      background: hsl(205, 86%, 81%);
+      color: hsl(205, 78%, 60%);
+      padding-left: 1.5rem;
+    }
+  }
+}
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-height {
+  height: 120px;
+}
+.show-container {
+  height: 10rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  h3 {
+    margin-top: 10px;
+    color: #000000;
+    margin-left: 5px;
+    font-family: "Revalia", cursive;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+    a {
+      padding: 0;
+      margin: 0 0.5rem;
+      &:hover {
+        padding: 0;
+        background: transparent;
+      }
+    }
+  }
+  .social-icons {
+    display: flex;
+    a {
+      margin: 0 0.5rem;
+      color: hsl(205, 78%, 60%);
+      transition: all 0.3s linear;
+      &:hover {
+        color: hsl(205, 90%, 76%);
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+  .links-container {
+    width: 60%;
+  }
+  .links {
+    li {
+      a {
+        color: #000000;
+        font-weight: bold;
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
   }
 }
